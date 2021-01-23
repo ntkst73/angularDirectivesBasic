@@ -2,13 +2,20 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
+import  {FormsModule} from '@angular/forms';
+import {StyleDirective} from './directives/style.directive';
+import { IfnotDirective } from './directives/ifnot.directive';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    StyleDirective,
+    IfnotDirective,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
